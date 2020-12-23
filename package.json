@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/app.js",
+    "tsc": "tsc",
+    "dev": "tsnd --respawn src/index.ts",
+    "prod": "tsc && node ./build/.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.11.8"
+    "@types/mongoose": "^5.10.3",
+    "mongoose": "^5.11.8",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
   },
   "devDependencies": {
+    "ts-node-dev": "^1.1.1"
   }
 }
